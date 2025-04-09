@@ -139,4 +139,16 @@ body {
   background-color: #dddddd;
   font-size: 1.4rem;
   border: 2px solid var(--color-effect);
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  text-align: center;
+  background-color: #ebebeb;
+  font-size: 1.4rem;
+  border-top: 2px solid var(--color-effect);
 }/*# sourceMappingURL=style.css.map */
