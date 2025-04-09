@@ -156,3 +156,18 @@ body {
 // END MAIN
 
 // START FOOTER
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    text-align: center;
+    background-color: #ebebeb;
+    font-size: 1.4rem;
+    border-top: 2px solid var(--color-effect);
+
+}
+
+// END FOOTER
