@@ -81,4 +81,50 @@ body {
 .main form div {
   padding: 1rem 0;
   position: relative;
+}
+.main form div input[type=checkbox] {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+.main form div input[type=checkbox]:checked + label {
+  background-color: rgba(127, 255, 212, 0.3);
+}
+.main form div input[type=checkbox]:checked + label::after {
+  background-color: var(--color-text);
+}
+.main form div input[type=checkbox]:focus + label {
+  outline: 0.2rem dashed var(--color-text);
+  outline-offset: 0.4rem;
+}
+.main form div label {
+  position: relative;
+  display: block;
+  padding: 0.4rem 0.4rem 0.4rem 3rem;
+}
+.main form div label::before, .main form div label::after {
+  position: absolute;
+  content: "";
+}
+.main form div label::before {
+  display: block;
+  top: 0.7rem;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--color-bg);
+  border: 0.2rem solid var(--color-text);
+}
+.main form div label::after {
+  display: block;
+  top: 1.1rem;
+  left: 1.4rem;
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--color-bg);
 }/*# sourceMappingURL=style.css.map */
