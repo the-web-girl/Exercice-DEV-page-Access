@@ -87,6 +87,54 @@ body {
         div {
            padding: 1rem 0;
            position: relative;
+
+           input[type=checkbox] {
+                @include sr-only;
+            
+                &:checked + label {
+                    &::after {
+                        background-color: var(--color-text);
+                    }
+            
+                    background-color: rgba($color: aquamarine, $alpha: 0.3);
+                }
+            
+                &:focus + label {
+                    outline: .2rem dashed var(--color-text);
+                    outline-offset: .4rem;
+                }
+            }
+            
+            label {
+                position: relative;
+                display: block;
+                padding: 0.4rem 0.4rem 0.4rem 3rem;
+            
+                &::before,
+                &::after {
+                    position: absolute;
+                    content: '';
+                }
+            
+                &::before {
+                    display: block;
+                    top: 0.7rem;
+                    left: 1rem;
+                    width: 1rem;
+                    height: 1rem;
+                    background-color: var(--color-bg);
+                    border: 0.2rem solid var(--color-text);
+                }
+            
+                &::after {
+                    display: block;
+                    top: 1.1rem;
+                    left: 1.4rem;
+                    width: 0.6rem;
+                    height: 0.6rem;
+                    background-color: var(--color-bg);
+                }
+            }
         }
     }
 
