@@ -1,0 +1,62 @@
+// MIXIN & RESET
+@import 'mixin/__index';
+:root {
+    --color-text: #000000;
+    --color-bg: #fff;
+    --color-effect: #b80000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sr-only {
+    @include sr-only;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: var(--color-bg);
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-text);
+}
+
+// START HEADER
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    height: 5rem;
+    border-bottom: 2px solid var(--color-effect);
+
+    .logo {
+        width: 3rem;
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    .h1 {
+        margin-left: 1rem;
+        font-size: 2rem;
+    }  
+}
+
+// END HEADER
+
+// START MAIN
