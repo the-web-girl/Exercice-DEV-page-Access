@@ -1,0 +1,29 @@
+// MIXIN & RESET
+@import 'mixin/__index';
+:root {
+    --color-text: #384552;
+    --color-bg: #fff;
+    --color-effect: #b80000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.sr-only {
+    @include sr-only;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    background-color: var(--color-bg);
+    font-size: 1.6rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--color-text);
+}

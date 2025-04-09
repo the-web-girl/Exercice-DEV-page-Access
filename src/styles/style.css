@@ -1,1 +1,34 @@
-/*# sourceMappingURL=style.css.map */
+:root {
+  --color-text: #384552;
+  --color-bg: #fff;
+  --color-effect: #b80000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.sr-only {
+  position: absolute !important;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  position: relative;
+  background-color: var(--color-bg);
+  font-size: 1.6rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: var(--color-text);
+}/*# sourceMappingURL=style.css.map */
