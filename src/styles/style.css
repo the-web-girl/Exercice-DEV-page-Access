@@ -93,7 +93,7 @@ body {
   white-space: nowrap;
 }
 .main form div input[type=checkbox]:checked + label {
-  background-color: rgba(127, 255, 212, 0.3);
+  background-color: rgba(0, 47, 255, 0.3);
 }
 .main form div input[type=checkbox]:checked + label::after {
   background-color: var(--color-text);
@@ -127,4 +127,16 @@ body {
   width: 0.6rem;
   height: 0.6rem;
   background-color: var(--color-bg);
+}
+.main .compteur {
+  margin: 1rem 0 0;
+  width: 20%;
+  text-align: center;
+}
+.main .compteur p {
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: #dddddd;
+  font-size: 1.4rem;
+  border: 2px solid var(--color-effect);
 }/*# sourceMappingURL=style.css.map */

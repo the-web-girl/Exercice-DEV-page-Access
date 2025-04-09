@@ -96,7 +96,7 @@ body {
                         background-color: var(--color-text);
                     }
             
-                    background-color: rgba($color: aquamarine, $alpha: 0.3);
+                    background-color: rgba($color: rgb(0, 47, 255), $alpha: 0.3);
                 }
             
                 &:focus + label {
@@ -139,7 +139,17 @@ body {
     }
 
     .compteur {
-
+        margin: 1rem 0 0;
+        width: 20%;
+        text-align: center;
+        
+        p {
+            padding: 1rem;
+            border-radius: 1rem;
+            background-color: #dddddd;
+            font-size: 1.4rem;
+            border: 2px solid var(--color-effect);
+        }
     }
 }
 
