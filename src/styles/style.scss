@@ -171,3 +171,56 @@ body {
 }
 
 // END FOOTER
+
+// MEDIA QUERIES
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 1rem .5rem;
+        flex-direction: column;
+
+        h1 {
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .main {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+
+        form {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+    
+            fieldset {
+                padding: .1rem;
+                border: 1px solid var(--color-effect);
+            
+                legend {
+                    padding: 0 .5rem;
+                }
+            }
+        }
+    
+        .compteur {
+            width: 100%;
+            margin: 1rem auto;
+    
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .main {
+        padding: 0 2rem;
+    }
+}
+
+// END MEDIA QUERIES
